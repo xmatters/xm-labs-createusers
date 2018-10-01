@@ -4,7 +4,7 @@ This is a data-source integration allowing for the automation of adding groups o
 
 # Files
 **index.php**
-This is the file that loads in your webbrowser and displays a simple form (you can sdd your own css 
+This is the file that loads in your webbrowser and displays a simple form (you can add your own css )
 
 **loading-1-1-.gif** 
 Loading image for form processing
@@ -16,7 +16,7 @@ Actual heart of the individual add. Be sure to update the appropriate usernames,
 Performs CLI based batch addition of multiple users. Be sure to replace appropriate usernames, passwords, company names, and API keys
 
 **newxmattersusers.csv**
-file containig list of users to be added int he batch add. username, lastname, firstname, timezone
+file containing a list of users to be added in the batch add. username, lastname, firstname, timezone
 
 # How it works
 *GUI*
@@ -24,6 +24,9 @@ User fills out the form and receives an email with instrucitons on how to add de
 
 *CLI*
 Batch is loaded and each username is displayed as created or not created.
+
+When the script runs successfully either from the single user GUI or from the batch script the individual users will receive teh following email: (it needs to be customized for each company )
+![Successful Email](createuser_xmatters_email_sent.png "Example of sent email")
 
 # Prerequisites
 This script requires that PHP Version 5.3.3 at least (Has not been tested with older PHP versions) There is nothing which has been depricated so should work in with PHP 7 without issue.
@@ -47,7 +50,9 @@ php batchcreate.php
 
 and in this case it failed because the users exist:
 ![Batch CLI Errors Example](batchcreate_xMatters_users_errors.png "CLI Users Exist")
+Here is the GUI failure for an existing user:
+![Form With Error](Create_xMatters_User_error.png "User Exists")
 
 # Troubleshooting
 If your LDAP is configured differently you may need to adjust how the authentication is completed going to the LDAP/ AD server
-![Form With Error](Create_xMatters_User_error.png "User Exists")
+
