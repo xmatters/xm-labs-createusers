@@ -25,7 +25,12 @@ User fills out the form and receives an email with instrucitons on how to add de
 *CLI*
 Batch is loaded and each username is displayed as created or not created.
 
-When the script runs successfully either from the single user GUI or from the batch script the individual users will receive teh following email: (it needs to be customized for each company )
+When the script runs successfully either from the single user GUI or from the batch script the individual users will receive the following email: (it needs to be customized for each company )
+
+**NOTE: The Users email address is pulled from the LDAP server configureation.**
+
+**NOTE: I BCC myself on the email in order to track who was created when. I have logs but its nice to have the email incase tehy ask for them again.**
+
 ![Successful Email](createuser_xmatters_email_sent.png "Example of sent email")
 
 # Prerequisites
