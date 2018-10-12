@@ -4,7 +4,7 @@ This is a data-source integration allowing for the automation of adding groups o
 
 # Files
 * [index.php](index.php) - This is the file that loads in your webbrowser and displays a simple form (you can add your own css )
-* [loading-1-1.gif](loading-1-1-.gif) - Loading image for form processing
+* [loading-1-1.gif](loading-1-1.gif) - Loading image for form processing
 * [doquery.php](doquery.php) - Actual heart of the individual add. Be sure to update the appropriate usernames, passwords, and company names as well as xMatters API keys 
 * [batchcreate.php](batchcreate.php) - Performs CLI based batch addition of multiple users. Be sure to replace appropriate usernames, passwords, company names, and API keys
 * [newxmattersusers.csv](newxmattersusers.csv) - file containing a list of users to be added in the batch add. username, lastname, firstname, timezone
