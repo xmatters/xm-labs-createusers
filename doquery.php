@@ -16,27 +16,27 @@ include("usepass.php");  //ldap authentication.
 
 // send email to new user
 function sendUserEmail($email, $fname, $lname, $username){
-$to = $email;
-$subject = "New xMatters Account Information";
-$txt = "Hey ".$fname." ".$lname.",\nThis is in regards to your request for a new xMatters account. ";
-$txt.= "\n When you get a chance, check to see if you can log in to xMatters now using your new CSO credentials ( ".$username." )";
-$txt.= "\n at https://windstream.hosted.xmatters.com/ \n";
-$txt.= "\nHere's some information on xMatters, there's a document at the bottom for setting up subscriptions as well:";
-$txt.= "\nhttps://wiki.windstream.com/display/NOSS/NMS+-+FAQ%27s";
-$txt.= "\nhttps://wiki.windstream.com/display/NOSS/xMatters+Information";
-$txt.= "\nhttps://wiki.windstream.com/download/attachments/244482085/xMatters%20Subscriptions.doc?api=v2";
-$txt.="\n\nReach out to me if you need any help. \nSincerely, \nJonathan Wagner\n\r";
-$headers = "From: Jonathan.Wagner@windstream.com" . "\r\n" ."CC: jonathan.wagner@windstream.com";
-
-
-$GLOBALS['log']->logThis(LOG_INFO,$to);
-$GLOBALS['log']->logThis(LOG_INFO,$subject);
-$GLOBALS['log']->logThis(LOG_INFO,$headers);
-$GLOBALS['log']->logThis(LOG_INFO,$txt);
-
-$retval = mail($to,$subject,$txt,$headers);
-
-return($retval);
+   $to = $email;
+   $subject = "New xMatters Account Information";
+   $txt = "Hey ".$fname." ".$lname.",\nThis is in regards to your request for a new xMatters account. ";
+   $txt.= "\n When you get a chance, check to see if you can log in to xMatters now using your new CSO credentials ( ".$username." )";
+   $txt.= "\n at https://windstream.hosted.xmatters.com/ \n";
+   $txt.= "\nHere's some information on xMatters, there's a document at the bottom for setting up subscriptions as well:";
+   $txt.= "\nhttps://wiki.windstream.com/display/NOSS/NMS+-+FAQ%27s";
+   $txt.= "\nhttps://wiki.windstream.com/display/NOSS/xMatters+Information";
+   $txt.= "\nhttps://wiki.windstream.com/download/attachments/244482085/xMatters%20Subscriptions.doc?api=v2";
+   $txt.="\n\nReach out to me if you need any help. \nSincerely, \nJonathan Wagner\n\r";
+   $headers = "From: Jonathan.Wagner@windstream.com" . "\r\n" ."CC: jonathan.wagner@windstream.com";
+   
+   
+   $GLOBALS['log']->logThis(LOG_INFO,$to);
+   $GLOBALS['log']->logThis(LOG_INFO,$subject);
+   $GLOBALS['log']->logThis(LOG_INFO,$headers);
+   $GLOBALS['log']->logThis(LOG_INFO,$txt);
+   
+   $retval = mail($to,$subject,$txt,$headers);
+   
+   return($retval);
 
 }
 
