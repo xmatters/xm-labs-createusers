@@ -10,10 +10,10 @@ This is a data-source integration allowing for the automation of adding groups o
 * [newxmattersusers.csv](newxmattersusers.csv) - file containing a list of users to be added in the batch add. username, lastname, firstname, timezone
 
 # How it works
-*GUI*
+**GUI**
 User fills out the form and receives an email with instrucitons on how to add devices, subscribe to subscriptions etc. System checks to see if userid exists if it does not a new user is created if it does then an error is displayed.
 
-*CLI*
+**CLI**
 Batch is loaded and each username is displayed as created or not created.
 
 When the script runs successfully either from the single user GUI or from the batch script the individual users will receive the following email: (it needs to be customized for each company )
