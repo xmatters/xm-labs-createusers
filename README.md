@@ -2,6 +2,17 @@
 
 This is a data-source integration allowing for the automation of adding groups of users or single users via php web-form
 
+**Note**: A more up to date utility for creating users is the xmtoolbox. Check out the quickstart [here](https://github.com/xmatters/xmtoolbox-quick-start)
+
+
+<kbd>
+<a href="https://support.xmatters.com/hc/en-us/community/topics">
+   <img src="https://github.com/xmatters/xMatters-Labs/raw/master/media/disclaimer.png">
+</a>
+</kbd>
+
+
+
 # Files
 * [index.php](index.php) - This is the file that loads in your webbrowser and displays a simple form (you can add your own css )
 * [loading-1-1.gif](loading-1-1.gif) - Loading image for form processing
